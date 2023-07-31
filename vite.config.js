@@ -5,5 +5,5 @@ import autoprefixer from 'autoprefixer';
 
 export default defineConfig({
   plugins: [react(), tailwindcss(), autoprefixer()],
-  base: "/Portfolio"
+  base: "/Portfolio",
 });
