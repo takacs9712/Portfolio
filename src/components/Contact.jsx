@@ -32,6 +32,25 @@ const Contact = () => {
     },
   });
 
+  const handleSubmit = (e) => {
+    e.preventDefault(); 
+
+    validationSchema
+      .validate(formik.values, { abortEarly: false }) 
+      .then(() => {
+
+        formik.handleSubmit();
+      })
+      .catch((errors) => {
+
+        const formErrors = {};
+        errors.inner.forEach((error) => {
+          formErrors[error.path] = error.message;
+        });
+        formik.setErrors(formErrors);
+      });
+  };
+
   const handlePhoneInput = (e) => {
     const numericRegex = /^((\+36)|06)?\d*$/;
     if (e.key !== 'Backspace' && !numericRegex.test(e.key)) {
@@ -46,6 +65,7 @@ const Contact = () => {
         action='https://getform.io/f/4431c9a2-8a74-4279-8423-ba8a20a45f51'
         method='POST'
         encType='multipart/form-data'
+        onSubmit={handleSubmit}
       >
         <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
           <div className='flex flex-col'>
