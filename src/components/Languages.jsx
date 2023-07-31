@@ -2,7 +2,7 @@ import React from 'react';
 import html from '../assets/lg/html.png';
 import css from '../assets/lg/css.png';
 import js from '../assets/lg/js.png';
-import Vite from '../assets/lg/Vite.png';
+import Vite from '../assets/lg/vite.png';
 import typescript from '../assets/lg/typescript.png';
 import react from '../assets/lg/react.png';
 
