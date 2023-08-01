@@ -16,6 +16,7 @@ Git: Version control system for tracking changes in the code.
 GitHub: Hosting platform for managing and sharing the code.
 
 Features
+
 Responsive design for various screen sizes and devices.
 Navigation to different sections of the portfolio.
 Project showcase with descriptions and live demo links.
@@ -23,6 +24,7 @@ Detailed information about my skills and experiences.
 Contact form for reaching out to me.
 
 How to Run
+
 Clone the repository: git clone https://github.com/your-username/your-portfolio.git
 Navigate to the project directory: cd your-portfolio
 Install the dependencies: npm install
@@ -30,6 +32,7 @@ Start the development server: npm run dev
 Open your browser and go to http://localhost:3000 to view the portfolio.
 
 Contact
-If you have any questions or want to get in touch, feel free to reach out to me at your.email@example.com.
+
+If you have any questions or want to get in touch, feel free to reach out to me at takacsv90@gmail.com.
 
 Thank you for visiting my portfolio!
