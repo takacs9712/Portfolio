@@ -3,6 +3,7 @@ Portfolio
 This portfolio was created using React and Vite, with styling powered by Tailwind CSS.
 
 Description
+
 This is my personal portfolio showcasing my projects, skills, and experiences. I built this portfolio using the React JavaScript library and Vite as the development tooling. React provides a powerful and efficient way to build dynamic user interfaces, while Vite helps to create a fast and modern development environment.
 
 Technologies Used
