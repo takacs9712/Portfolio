@@ -23,7 +23,7 @@ const Projects = () => {
         For GitHub Repository Access - Contact Me Now!
       </h1>
       <div className='grid sm:grid-cols-2 gap-12 mt-16'>
-        <ProjectItem img={Syncee} title='Syncee - App' />
+        <ProjectItem img={Syncee} title='Syncee - App [Fake]' />
         <ProjectItem img={animal} title='Animal Shelter' />
       </div>
       <button
