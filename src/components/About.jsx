@@ -3,7 +3,7 @@ import WorkItem from './WorkItem'
 
 const data = [
     {   
-        company: 'P&M Solutions Kft.',
+        company: 'P&M Solutions Bt.',
         year: 2023,
         title: 'Frontend Developer',
         duration: 'Consultant',
