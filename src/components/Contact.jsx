@@ -1,20 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { useSubject } from './SubjectContext';
 
 const Contact = () => {
-  const { subject } = useSubject();
+  const { subject, setSubject } = useSubject();
+  const [isMessageSent, setIsMessageSent] = useState(false);
 
   const validationSchema = Yup.object().shape({
     name: Yup.string().required('Name is required'),
     phone: Yup.string()
       .required('Phone is required')
-      .matches(/^((\+36)|06)?\d*$/, 'Phone must start with "06" and only contain numbers after that'),
+      .matches(/^((\06))?\d*$/, 'Phone must start with "06" and only contain numbers after that'),
     email: Yup.string()
       .email('Invalid email')
       .required('Email is required'),
-    subject: Yup.string().required('Subject is required'),
     message: Yup.string().required('Message is required'),
   });
 
@@ -23,33 +23,24 @@ const Contact = () => {
       name: '',
       phone: '06',
       email: '',
-      subject: '',
       message: '',
     },
     validationSchema,
-    onSubmit: (values) => {
-      console.log(values);
+    onSubmit: async (values) => {
+      try {
+        const response = await fetch('https://getform.io/f/66898367-6eb9-4747-bd19-7f19a4e2d639', {
+          method: 'POST',
+          body: new URLSearchParams(values),
+        });
+
+        if (response.ok) {
+          setIsMessageSent(true);
+        } else {
+        }
+      } catch (error) {
+      }
     },
   });
-
-  const handleSubmit = (e) => {
-    e.preventDefault(); 
-
-    validationSchema
-      .validate(formik.values, { abortEarly: false }) 
-      .then(() => {
-
-        formik.handleSubmit();
-      })
-      .catch((errors) => {
-
-        const formErrors = {};
-        errors.inner.forEach((error) => {
-          formErrors[error.path] = error.message;
-        });
-        formik.setErrors(formErrors);
-      });
-  };
 
   const handlePhoneInput = (e) => {
     const numericRegex = /^((\+36)|06)?\d*$/;
@@ -62,10 +53,10 @@ const Contact = () => {
     <div id='contact' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
       <h1 className='py-4 text-4xl font-bold text-center text-[#001b5e]'>Contact</h1>
       <form
-        action='https://getform.io/f/4431c9a2-8a74-4279-8423-ba8a20a45f51'
-        method='POST'
+        action='https://getform.io/f/66898367-6eb9-4747-bd19-7f19a4e2d639'
+        method="POST"
         encType='multipart/form-data'
-        onSubmit={handleSubmit}
+        onSubmit={formik.handleSubmit}
       >
         <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
           <div className='flex flex-col'>
@@ -121,7 +112,7 @@ const Contact = () => {
               type='text'
               name='subject'
               value={subject}
-              onChange={formik.handleChange}
+              onChange={(e) => setSubject(e.target.value)}
               onBlur={formik.handleBlur}
             />
           {formik.touched.subject && formik.errors.subject && (
@@ -145,6 +136,9 @@ const Contact = () => {
         <button type='submit' className='bg-[#001b5e] text-gray-100 mt-4 w-full p-4 rounded-lg hover:bg-sky-700'>
           Send Message
         </button>
+        {isMessageSent && (
+          <div className='text-green-600 mt-2'>Message was sent successfully</div>
+        )}
       </form>
     </div>
   );
