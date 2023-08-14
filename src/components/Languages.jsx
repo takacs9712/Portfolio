@@ -2,7 +2,6 @@ import React from 'react';
 import html from '../assets/lg/html.png';
 import css from '../assets/lg/css.png';
 import js from '../assets/lg/js.png';
-import Vite from '../assets/lg/vite.png';
 import typescript from '../assets/lg/typescript.png';
 import react from '../assets/lg/react.png';
 
@@ -31,10 +30,6 @@ const Languages = () => {
       name: 'React',
       image: react,
     },
-    {
-      name: 'Vite',
-      image: Vite,
-    },
   ];
 
   return (
@@ -54,7 +49,7 @@ const Languages = () => {
       </div>
 
       <h1 className='text-4xl font-bold mb-10 mt-16 text-center'>Frameworks</h1>
-      <div className='grid grid-cols-1 sm:grid-cols-2 gap-2 justify-items-center'>
+      <div className='flex justify-center justify-items-center'>
         {frameworks.map((language, index) => (
           <div key={index} className="bg-white rounded shadow-md h-64 p-6 sm:p-10 flex flex-col justify-between">
             <img
