@@ -15,7 +15,7 @@ const Main = () => {
                 <h2 className='flex sm:text-3xl text-2xl pt-4 text-white'>I'm
                 <TypeAnimation
                     sequence={[
-                        'a Frontend Developer',
+                        'an Aspiring Frontend Developer',
                         1000,
                         'also an Economist',
                         1000
