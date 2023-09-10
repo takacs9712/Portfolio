@@ -17,8 +17,6 @@ const Main = () => {
                     sequence={[
                         'an aspiring Frontend Developer',
                         1000,
-                        'also an Economist',
-                        1000
                     ]}
                     wrapper="div"
                     cursor={true}
