@@ -6,6 +6,7 @@ import { useSubject } from './SubjectContext';
 const Contact = () => {
   const { subject, setSubject } = useSubject();
   const [isMessageSent, setIsMessageSent] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
   const validationSchema = Yup.object().shape({
     name: Yup.string().required('Name is required'),
@@ -15,14 +16,16 @@ const Contact = () => {
     email: Yup.string()
       .email('Invalid email')
       .required('Email is required'),
+    subject: Yup.string(),
     message: Yup.string().required('Message is required'),
   });
 
   const formik = useFormik({
     initialValues: {
       name: '',
-      phone: '06',
+      phone: '',
       email: '',
+      subject: '',
       message: '',
     },
     validationSchema,
@@ -35,9 +38,12 @@ const Contact = () => {
 
         if (response.ok) {
           setIsMessageSent(true);
+          formik.resetForm()
         } else {
+          setErrorMessage('Something went wrong. Please try again later.');
         }
       } catch (error) {
+        setErrorMessage('Something went wrong. Please try again later.');
       }
     },
   });
@@ -76,7 +82,7 @@ const Contact = () => {
           <div className='flex flex-col'>
             <label className='uppercase text-sm py-2'>Phone</label>
             <input
-              placeholder='+36'
+              placeholder=''
               className='border-2 rounded-lg p-3 flex border-gray-300'
               type='tel'
               name='phone'
@@ -138,6 +144,9 @@ const Contact = () => {
         </button>
         {isMessageSent && (
           <div className='text-green-600 mt-2'>Message was sent successfully</div>
+        )}
+        {errorMessage && (
+          <div className='text-red-600 mt-2'>{errorMessage}</div>
         )}
       </form>
     </div>
