@@ -37,7 +37,7 @@ const Contact = () => {
         });
 
         if (response.ok) {
-          setIsMessageSent(true);
+          setIsMessageSent('Message was sent successfully');
           formik.resetForm()
         } else {
           setErrorMessage('Something went wrong. Please try again later.');
@@ -143,7 +143,7 @@ const Contact = () => {
           Send Message
         </button>
         {isMessageSent && (
-          <div className='text-green-600 mt-2'>Message was sent successfully</div>
+          <div className='text-green-600 mt-2'>{isMessageSent}</div>
         )}
         {errorMessage && (
           <div className='text-red-600 mt-2'>{errorMessage}</div>
