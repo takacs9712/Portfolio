@@ -15,7 +15,7 @@ export function SubjectProvider({ children }) {
 export function useSubject() {
   const context = useContext(SubjectContext);
   if (!context) {
-    throw new Error('useSubject must be used within a SubjectProvider');
+    throw new Error('');
   }
   return context;
 }
