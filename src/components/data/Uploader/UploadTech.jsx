@@ -4,7 +4,7 @@ import techData from "./data";
 
 function UploadTech() {
   return (
-    <div className=" p-4 text-left bg-slate-300 py-10 px-12">
+    <div className=" p-4 text-center bg-slate-300 py-10 px-12">
       <h1 className="text-3xl font-semibold mb-4 text-black">
         Technologies & Libraries Used
       </h1>

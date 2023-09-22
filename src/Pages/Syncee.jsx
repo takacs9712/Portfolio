@@ -119,8 +119,10 @@ const Syncee = () => {
   return (
     <div className="min-h-screen">
       <HomeButton />
-      <div className="bg-blue-200 dark:bg-blue-100 py-16 px-12 ">
-        <h1 className="text-3xl font-semibold mb-4 text-black">Snapshots</h1>
+      <div className="bg-blue-200 dark:bg-blue-100 py-28 px-12 ">
+        <h1 className="text-3xl font-semibold mb-2 text-black text-center">
+          Snapshots
+        </h1>
 
         <div className="grid grid-flow-row gap-8 text-neutral-600 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {projectImages.map((src, index) => (

@@ -4,7 +4,7 @@ import techData from "./data";
 
 function SynceeTech() {
   return (
-    <div className=" p-4 text-left bg-blue-200 py-10 px-12">
+    <div className=" p-4 text-center bg-blue-200 py-10 px-12">
       <h1 className="text-3xl font-semibold mb-4 text-black">
         Technologies & Libraries Used
       </h1>
