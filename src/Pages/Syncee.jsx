@@ -143,7 +143,6 @@ const Syncee = () => {
           </h2>
           <div className="flex justify-center flex-wrap gap-6">
             <CodeSnippet
-              language="TypeScript"
               snapshots={[snapshot1, snapshot2, snapshot3, snapshot4]}
               onOpenImageModal={openImageModal}
             />

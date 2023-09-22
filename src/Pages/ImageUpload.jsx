@@ -128,7 +128,6 @@ const ImageUpload = () => {
           </h2>
           <div className="flex justify-center flex-wrap gap-6">
             <CodeSnippet
-              language="TypeScript"
               snap={[snap1, snap2, snap3, snap4, snap5]}
               onOpenImageModal={openImageModal}
             />
