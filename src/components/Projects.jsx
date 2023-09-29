@@ -39,7 +39,7 @@ const Projects = () => {
           <ProjectItem img={uploader} title="Image Upload/Download" />
         </Link>
         <Link to="/Portfolio/FoodOrder">
-          <ProjectItem img={restaurant} title="Foodorder" />
+          <ProjectItem img={restaurant} title="restaurant" />
         </Link>
         <ProjectItem img={placeholder} title="In Progress..." />
         <ProjectItem img={placeholder} title="In Progress..." />
