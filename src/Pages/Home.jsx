@@ -18,7 +18,6 @@ const Home = () => {
       <Projects />
       <Languages />
       <Contact />
-      <Footer />
     </SubjectProvider>
   );
 };

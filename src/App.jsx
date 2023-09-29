@@ -1,21 +1,30 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 import Home from "./Pages/Home";
 import Syncee from "./Pages/Syncee";
 import Animal from "./Pages/Animal";
 import ImageUpload from "./Pages/ImageUpload";
+import RootLayout from "./Pages/Root";
+import ErrorPage from "./Pages/ErrorPage";
+import FoodOrder from "./Pages/FoodOrder";
+
+const router = createBrowserRouter([
+  {
+    path: "/Portfolio/",
+    element: <RootLayout />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: "/Portfolio/Syncee", element: <Syncee /> },
+      { path: "/Portfolio/Animal", element: <Animal /> },
+      { path: "/Portfolio/ImageUpload", element: <ImageUpload /> },
+      { path: "/Portfolio/FoodOrder", element: <FoodOrder /> },
+      { path: "*", element: <ErrorPage /> },
+    ],
+  },
+]);
 
 function App() {
-  return (
-    <BrowserRouter basename="/Portfolio/">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Syncee" element={<Syncee />} />
-        <Route path="/AnimalShelter" element={<Animal />} />
-        <Route path="/ImageUpload" element={<ImageUpload />} />
-      </Routes>
-    </BrowserRouter>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

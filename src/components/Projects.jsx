@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ProjectItem from "./ProjectItem";
+import Restaurant from "../assets/Restaurant.png";
 import placeholder from "../assets/placeholder.png";
 import Syncee1 from "../assets/Syncee1.png";
 import animal from "../assets/animal.png";
@@ -28,15 +29,19 @@ const Projects = () => {
         For GitHub Repository Access - Contact Me Now!
       </h1>
       <div className="grid sm:grid-cols-2 gap-6 mt-16">
-        <Link to="/Syncee">
+        <Link to="/Portfolio/Syncee">
           <ProjectItem img={Syncee1} title="Syncee - App copy" />
         </Link>
-        <Link to="/AnimalShelter">
+        <Link to="/Portfolio/Animal">
           <ProjectItem img={animal} title="Animal Shelter" />
         </Link>
-        <Link to="/ImageUpload">
+        <Link to="/Portfolio/ImageUpload">
           <ProjectItem img={uploader} title="Image Upload/Download" />
         </Link>
+        <Link to="/Portfolio/FoodOrder">
+          <ProjectItem img={Restaurant} title="Foodorder" />
+        </Link>
+        <ProjectItem img={placeholder} title="In Progress..." />
         <ProjectItem img={placeholder} title="In Progress..." />
       </div>
       <button

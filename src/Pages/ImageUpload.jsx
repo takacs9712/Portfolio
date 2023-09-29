@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { AiFillCloseSquare } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import Header from "../components/Header";
 
-import Footer from "../components/Footer";
 import UploadTech from "../components/data/Uploader/UploadTech";
-import HomeButton from "../components/helper/HomeButton";
 
 import Upload from "../assets/projects/Upload/Upload.png";
 import upload1 from "../assets/projects/Upload/upload1.png";
@@ -104,7 +103,7 @@ const ImageUpload = () => {
 
   return (
     <div className="min-h-screen">
-      <HomeButton />
+      <Header />
       <div className="bg-white py-28 px-12">
         <h1 className="text-3xl font-semibold mb-2 text-black text-center">
           Snapshots
@@ -143,7 +142,6 @@ const ImageUpload = () => {
           </Link>
         </div>
       </section>
-      <Footer />
     </div>
   );
 };

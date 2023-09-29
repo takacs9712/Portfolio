@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { AiFillCloseSquare } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import Header from "../components/Header";
 
-import Footer from "../components/Footer";
-import HomeButton from "../components/helper/HomeButton";
 import SynceeTech from "../components/data/Syncee/SynceeTech";
 
 import Syncee1 from "../assets/Syncee1.png";
@@ -118,7 +117,7 @@ const Syncee = () => {
 
   return (
     <div className="min-h-screen">
-      <HomeButton />
+      <Header />
       <div className="bg-blue-200 dark:bg-blue-100 py-28 px-12 ">
         <h1 className="text-3xl font-semibold mb-2 text-black text-center">
           Snapshots
@@ -158,7 +157,6 @@ const Syncee = () => {
           </Link>
         </div>
       </section>
-      <Footer />
     </div>
   );
 };
