@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ProjectItem from "./ProjectItem";
-import Restaurant from "../assets/Restaurant.png";
+import restaurant from "../assets/restaurant.png";
 import placeholder from "../assets/placeholder.png";
 import Syncee1 from "../assets/Syncee1.png";
 import animal from "../assets/animal.png";
@@ -39,7 +39,7 @@ const Projects = () => {
           <ProjectItem img={uploader} title="Image Upload/Download" />
         </Link>
         <Link to="/Portfolio/FoodOrder">
-          <ProjectItem img={Restaurant} title="Foodorder" />
+          <ProjectItem img={restaurant} title="Foodorder" />
         </Link>
         <ProjectItem img={placeholder} title="In Progress..." />
         <ProjectItem img={placeholder} title="In Progress..." />
