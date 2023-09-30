@@ -149,7 +149,7 @@ const Syncee = () => {
             />
           </div>
           <Link
-            to="/#contact"
+            to="/Portfolio/"
             type="button"
             className="bg-[#001b5e] text-gray-100 mt-4 md:mt-6 w-full md:w-1/6 p-2 md:p-4 rounded-lg text-center hover:bg-sky-700 transition duration-300 ease-in-out"
           >

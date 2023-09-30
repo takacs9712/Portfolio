@@ -104,7 +104,7 @@ const Animal = () => {
       <section className="bg-orange-200 text-white py-12">
         <div className="container mx-auto flex flex-col items-center">
           <Link
-            to="/#contact"
+            to="/Portfolio/"
             type="button"
             className="bg-[#755e1f] text-gray-100 mt-4 md:mt-6 w-full md:w-1/6 p-2 md:p-4 rounded-lg text-center hover:bg-orange-700 transition duration-300 ease-in-out"
           >

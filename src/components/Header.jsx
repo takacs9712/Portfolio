@@ -20,7 +20,7 @@ const Header = () => {
               activeClassName="text-blue-300"
               className="text-white hover:text-blue-300 transition duration-300"
             >
-              Syncee
+              Syncee Teszt
             </NavLink>
           </li>
           <li>

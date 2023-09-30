@@ -134,7 +134,7 @@ const ImageUpload = () => {
             />
           </div>
           <Link
-            to="/#contact"
+            to="/Portfolio/"
             type="button"
             className="bg-[#1d1d1c] text-gray-100 mt-4 md:mt-6 w-full md:w-1/6 p-2 md:p-4 rounded-lg text-center hover:bg-orange-700 transition duration-300 ease-in-out"
           >
