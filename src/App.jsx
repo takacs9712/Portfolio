@@ -12,6 +12,7 @@ const router = createBrowserRouter([
   {
     path: "/Portfolio/",
     element: <RootLayout />,
+    errorElement: <ErrorPage />,
     children: [
       { index: true, element: <Home /> },
       { path: "/Portfolio/Syncee", element: <Syncee /> },
