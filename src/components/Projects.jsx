@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ProjectItem from "./ProjectItem";
 import Screen1 from "../assets/projects/FoodOrder/Screen1.png";
 import placeholder from "../assets/placeholder.png";
@@ -28,18 +29,18 @@ const Projects = () => {
         For GitHub Repository Access - Contact Me Now!
       </h1>
       <div className="grid sm:grid-cols-2 gap-6 mt-16">
-        <a href="/Portfolio/Syncee" target="_blank">
+        <Link to="/Portfolio/Syncee">
           <ProjectItem img={Syncee1} title="Syncee - App copy" />
-        </a>
-        <a href="/Portfolio/Animal" target="_blank">
+        </Link>
+        <Link to="/Portfolio/Animal">
           <ProjectItem img={animal} title="Animal Shelter" />
-        </a>
-        <a href="/Portfolio/ImageUpload" target="_blank">
+        </Link>
+        <Link to="/Portfolio/ImageUpload">
           <ProjectItem img={uploader} title="Image Upload/Download" />
-        </a>
-        <a href="/Portfolio/FoodOrder" target="_blank">
+        </Link>
+        <Link to="/Portfolio/FoodOrder">
           <ProjectItem img={Screen1} title="Restaurant" />
-        </a>
+        </Link>
         <ProjectItem img={placeholder} title="In Progress..." />
         <ProjectItem img={placeholder} title="In Progress..." />
       </div>
