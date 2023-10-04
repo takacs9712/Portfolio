@@ -29,16 +29,16 @@ const Projects = () => {
         For GitHub Repository Access - Contact Me Now!
       </h1>
       <div className="grid sm:grid-cols-2 gap-6 mt-16">
-        <Link to="/Portfolio/Syncee">
+        <Link to="/Portfolio/Syncee" target="_blank">
           <ProjectItem img={Syncee1} title="Syncee - App copy" />
         </Link>
-        <Link to="/Portfolio/Animal">
+        <Link to="/Portfolio/Animal" target="_blank">
           <ProjectItem img={animal} title="Animal Shelter" />
         </Link>
-        <Link to="/Portfolio/ImageUpload">
+        <Link to="/Portfolio/ImageUpload" target="_blank">
           <ProjectItem img={uploader} title="Image Upload/Download" />
         </Link>
-        <Link to="/Portfolio/FoodOrder">
+        <Link to="/Portfolio/FoodOrder" target="_blank">
           <ProjectItem img={Screen1} title="Restaurant" />
         </Link>
         <ProjectItem img={placeholder} title="In Progress..." />

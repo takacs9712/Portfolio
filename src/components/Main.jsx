@@ -1,9 +1,10 @@
 import React from "react";
 import background from "../assets/background.jpeg";
 import { TypeAnimation } from "react-type-animation";
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 import me from "../assets/viktor-image.png";
-import DownloadButton from "../components/helper/DownloadButton.jsx";
+import DownloadButton from "./buttons/DownloadButton.jsx";
 import TakacsViktorCVeng from "../components/files/TakacsViktorCVeng.pdf";
 
 const Main = () => {
@@ -45,22 +46,11 @@ const Main = () => {
           </h2>
           <div className="flex justify-between pt-6 max-w-[200px] w-full ">
             <a
-              href="https://www.facebook.com/vtakacs97/"
+              href="https://github.com/takacs9712"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebookF
-                className="cursor-pointer hover:scale-110 ease-in duration-140"
-                size={20}
-                style={{ color: "white" }}
-              />
-            </a>
-            <a
-              href="https://www.instagram.com/tviktoor/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaInstagram
+              <FaGithub
                 className="cursor-pointer hover:scale-110 ease-in duration-140"
                 size={20}
                 style={{ color: "white" }}
@@ -72,6 +62,17 @@ const Main = () => {
               rel="noopener noreferrer"
             >
               <FaLinkedinIn
+                className="cursor-pointer hover:scale-110 ease-in duration-140"
+                size={20}
+                style={{ color: "white" }}
+              />
+            </a>
+            <a
+              href="mailto:takacsv90@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MdEmail
                 className="cursor-pointer hover:scale-110 ease-in duration-140"
                 size={20}
                 style={{ color: "white" }}
