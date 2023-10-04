@@ -10,7 +10,7 @@ import FoodOrder from "./Pages/FoodOrder";
 
 const router = createBrowserRouter([
   {
-    path: "/Portfolio",
+    path: "/Portfolio/",
     element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [

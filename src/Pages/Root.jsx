@@ -4,10 +4,10 @@ import Footer from "../components/Footer";
 
 function RootLayout() {
   return (
-    <div>
+    <>
       <Outlet />
       <Footer />
-    </div>
+    </>
   );
 }
 
