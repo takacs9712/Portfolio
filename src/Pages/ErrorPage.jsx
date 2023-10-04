@@ -5,7 +5,7 @@ function ErrorPage() {
   const navigate = useNavigate();
 
   const goBackToPortfolio = () => {
-    navigate("/Portfolio");
+    navigate("/Portfolio/");
   };
 
   return (
