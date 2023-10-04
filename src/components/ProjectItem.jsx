@@ -9,7 +9,7 @@ const ProjectItem = ({ img, title }) => {
   };
 
   return (
-    <div className="relative flex items-center justify-center h-60 w-[90%] shadow-xl shadow-gray-400 rounded-md group hover:bg-gradient-to-r from-gray-200 to-[#9fb3e7]">
+    <div className="relative flex items-center justify-center h-60 w-[100%] shadow-xl shadow-gray-400 rounded-md group hover:bg-gradient-to-r from-gray-200 to-[#9fb3e7]">
       <img
         src={img}
         alt="/"
