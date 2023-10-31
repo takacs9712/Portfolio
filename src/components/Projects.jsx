@@ -21,7 +21,7 @@ const Projects = () => {
   };
 
   return (
-    <div id="projects" className="max-w-[1080px] m-auto md:pl20 p-4 py-16 mb-6">
+    <div id="projects" className="max-w-[1080px] m-auto p-4 py-16 mb-6">
       <h1 className="text-4xl font-bold text-center text-[#001b5e]">
         Projects - Major Initiatives
       </h1>
