@@ -11,7 +11,7 @@ const data = [
       "As a Frontend Developer, my responsibility involves creating visually appealing and user-friendly websites and web applications using various frameworks, such as React JS or TS. I take care of performance optimization and ensure compatibility across different devices while collaborating with UX designers and backend developers. Proficiency in frontend technologies, responsive design, and understanding UX principles is crucial.",
   },
   {
-    company: "Webwise Hungary Kft",
+    company: "Webwise Hungary Kft.",
     year: 2022,
     title: "Customer Success Manager",
     duration: "1 Year - Present",
