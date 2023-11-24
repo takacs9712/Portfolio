@@ -6,6 +6,7 @@ import placeholder from "../assets/placeholder.png";
 import Syncee1 from "../assets/Syncee1.png";
 import animal from "../assets/animal.png";
 import uploader from "../assets/uploader.png";
+import Lottokeeper from "../assets/projects/Lotto/Lottokeeper.png";
 import { useSubject } from "./SubjectContext";
 
 const Projects = () => {
@@ -41,7 +42,7 @@ const Projects = () => {
         <Link to="/Portfolio/FoodOrder">
           <ProjectItem img={Screen1} title="Restaurant" />
         </Link>
-        <ProjectItem img={placeholder} title="In Progress..." />
+        <ProjectItem img={Lottokeeper} title="Lotto - In Progress" />
         <ProjectItem img={placeholder} title="In Progress..." />
       </div>
       <button
