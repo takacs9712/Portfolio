@@ -3,6 +3,8 @@
 
 This portfolio was created using React and Vite, with styling powered by Tailwind CSS.
 
+[https://takacs9712.github.io/Portfolio/](https://takacs9712.github.io/Portfolio/)
+
 **Description**
 
 This is my personal portfolio showcasing my projects, skills, and experiences. I built this portfolio using the React JavaScript library and Vite as the development tooling. React provides a powerful and efficient way to build dynamic user interfaces, while Vite helps to create a fast and modern development environment.
@@ -30,14 +32,10 @@ This is my personal portfolio showcasing my projects, skills, and experiences. I
 
   
 
- 1. Clone the repository: git clone
-    https://github.com/your-username/your-portfolio.git
-    
- 2. Navigate to the project directory: cd your-portfolio
+ 1. Clone the repository: git clone    
+ 2. Navigate to the project directory: cd my-project
  3. Install the dependencies: npm install
  4. Start the development server: npm run dev
- 5. Open your browser and go to http://localhost:3000 to view the
-    portfolio.
 
   
 
