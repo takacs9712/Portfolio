@@ -26,7 +26,7 @@ const DownloadButton = ({ fileName, downloadUrl }) => {
         onClick={handleDownload}
         className={`download-button transform ${
           isDownloading ? "opacity-70" : "opacity-100"
-        } bg-blue-500 hover:bg-blue-400 text-white px-4 sm:px-6 py-3 rounded-lg font-bold tracking-wider w-full sm:w-1/4 mt-4 sm:mt-8`}
+        } bg-blue-700 hover:bg-blue-800 text-white px-4 sm:px-6 py-3 rounded-lg font-bold tracking-wider w-full sm:w-1/4 mt-4 sm:mt-8`}
         disabled={isDownloading}
       >
         <div className="flex justify-center items-center relative">

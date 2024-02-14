@@ -10,12 +10,7 @@ const Contact = () => {
 
   const validationSchema = Yup.object().shape({
     name: Yup.string().required("Name is required"),
-    phone: Yup.string()
-      .required("Phone is required")
-      .matches(
-        /^((\06))?\d*$/,
-        'Phone must start with "06" and only contain numbers after that'
-      ),
+    phone: Yup.string().required("Phone Number is required"),
     email: Yup.string().email("Invalid email").required("Email is required"),
     subject: Yup.string(),
     message: Yup.string().required("Message is required"),

@@ -7,7 +7,7 @@ const ProjectItem = ({ img, title, inProgress }) => {
       <img
         src={img}
         alt="/"
-        className="rounded-xl group-hover:opacity-0 h-full w-full object-contain"
+        className="rounded-xl group-hover:opacity-0 h-full w-full object-cover"
       />
       <div className="hidden group-hover:block absolute top-[20%] left-[50%] translate-x-[-50%]">
         <h3 className="text-lg font-bold text-white tracking-wider text-center">

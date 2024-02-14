@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
-import placeholder from "../assets/placeholder.webp";
+import PMSolutionsdemo from "../assets/PMSolutionsdemo.webp";
 import Restaurant from "../assets/Restaurant.webp";
 import Syncee1 from "../assets/Syncee1.webp";
 import animal from "../assets/animal.webp";
@@ -36,7 +36,7 @@ const Projects = () => {
             <ProjectItem img={Restaurant} title="Restaurant" />
             <ProjectItem img={Lottokeeper} title="Lottokeeper" />
             <ProjectItem
-              img={placeholder}
+              img={PMSolutionsdemo}
               title="P&M Solutions Bt. Company Website"
               inProgress={true}
             />
@@ -44,7 +44,7 @@ const Projects = () => {
           <button
             onClick={handleGetAccessClick}
             type="button"
-            className="bg-blue-700 hover:bg-blue-800 text-gray-100 mt-6 w-full p-4 rounded-lg font-bold uppercase fontcase"
+            className="bg-blue-700 hover:bg-blue-800 text-gray-100 mt-6 w-full p-4 rounded-lg font-bold uppercase"
           >
             Get Access
           </button>
