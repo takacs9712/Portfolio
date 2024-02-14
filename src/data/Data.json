@@ -1,0 +1,38 @@
+[
+  {
+    "index": 0,
+    "company": "P&M Solutions Bt.",
+    "year": 2023,
+    "title": "Frontend Developer",
+    "duration": "Present",
+    "details": "Skilled in HTML, CSS, JavaScript, TypeScript, React, and ReduxToolkit. Developed and implemented numerous websites and applications. Utilized problem-solving and analytical skills to identify and resolve complex technical issues Excelled in communication and collaboration with team members",
+    "link": "https://pnmsolutions.eu/"
+  },
+  {
+    "index": 1,
+    "company": "Webwise Hungary Kft.",
+    "year": 2022,
+    "title": "Customer Success Manager",
+    "duration": "1 Year 6 months",
+    "details": "Built and maintained strong customer relationships, driving customer satisfaction and retention. Collaborated with cross-functional teams to identify and cross-sell additional products and services. Maintained accurate customer data and records",
+    "link": "https://webwise.hu/"
+  },
+  {
+    "index": 2,
+    "company": "Gazdafi Electronic Kft.",
+    "year": 2021,
+    "title": "Marketing Assistant",
+    "duration": "4 months",
+    "details": "Conducted market research and analyzed data to inform marketing strategies; Created and produced a variety of marketing materials; Assisted with sales and customer support initiatives",
+    "link": "https://www.villamossag.com/"
+  },
+  {
+    "index": 3,
+    "company": "Magyar Telekom Nyrt.",
+    "year": 2020,
+    "title": "Help Desk",
+    "duration": "1 Year",
+    "details": "Provided technical support to customers and troubleshooted issues. Provided product info and managed customer relationships and installed/configured hardware/software for customers.",
+    "link": "https://www.telekom.hu/"
+  }
+]

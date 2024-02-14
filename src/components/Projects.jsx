@@ -1,12 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import ProjectItem from "./ProjectItem";
-import Screen1 from "../assets/projects/FoodOrder/Screen1.png";
-import placeholder from "../assets/placeholder.png";
-import Syncee1 from "../assets/Syncee1.png";
-import animal from "../assets/animal.png";
-import uploader from "../assets/uploader.png";
-import Lottokeeper from "../assets/projects/Lotto/Lottokeeper.png";
+import placeholder from "../assets/placeholder.webp";
+import Restaurant from "../assets/Restaurant.webp";
+import Syncee1 from "../assets/Syncee1.webp";
+import animal from "../assets/animal.webp";
+import uploader from "../assets/uploader.webp";
+import Lottokeeper from "../assets/Lottokeeper.webp";
 import { useSubject } from "./SubjectContext";
 
 const Projects = () => {
@@ -22,37 +21,36 @@ const Projects = () => {
   };
 
   return (
-    <div id="projects" className="max-w-[1080px] m-auto p-4 py-16 mb-6">
-      <h1 className="text-4xl font-bold text-center text-[#001b5e]">
-        Projects - Major Initiatives
-      </h1>
-      <h1 className="text-2xl font-bold text-center text-[#001b5e] mt-8">
-        For GitHub Repository Access - Contact Me Now!
-      </h1>
-      <div className="grid sm:grid-cols-2 gap-6 mt-16">
-        <Link to="/Portfolio/Syncee">
-          <ProjectItem img={Syncee1} title="Syncee - App copy" />
-        </Link>
-        <Link to="/Portfolio/Animal">
-          <ProjectItem img={animal} title="Animal Shelter" />
-        </Link>
-        <Link to="/Portfolio/ImageUpload">
-          <ProjectItem img={uploader} title="Image Upload/Download" />
-        </Link>
-        <Link to="/Portfolio/FoodOrder">
-          <ProjectItem img={Screen1} title="Restaurant" />
-        </Link>
-        <ProjectItem img={Lottokeeper} title="Lotto - In Progress" />
-        <ProjectItem img={placeholder} title="In Progress..." />
+    <>
+      <div className="bg-[#f6f8fc] py-16">
+        <div id="projects" className="max-w-[1080px] m-auto py-16 mb-6">
+          <div className="flex justify-center ">
+            <h1 className="text-4xl font-bold text-center text-[#001b5e] ">
+              My Recent Projects
+            </h1>
+          </div>
+          <div className="grid sm:grid-cols-3 gap-6 mt-10">
+            <ProjectItem img={Syncee1} title="Syncee - App copy" />
+            <ProjectItem img={animal} title="Animal Shelter" />
+            <ProjectItem img={uploader} title="Image Upload/Download" />
+            <ProjectItem img={Restaurant} title="Restaurant" />
+            <ProjectItem img={Lottokeeper} title="Lottokeeper" />
+            <ProjectItem
+              img={placeholder}
+              title="P&M Solutions Bt. Company Website"
+              inProgress={true}
+            />
+          </div>
+          <button
+            onClick={handleGetAccessClick}
+            type="button"
+            className="bg-blue-700 hover:bg-blue-800 text-gray-100 mt-6 w-full p-4 rounded-lg font-bold uppercase fontcase"
+          >
+            Get Access
+          </button>
+        </div>
       </div>
-      <button
-        onClick={handleGetAccessClick}
-        type="button"
-        className="bg-[#001b5e] text-gray-100 mt-6 w-full p-4 rounded-lg hover:bg-sky-700"
-      >
-        Get Access
-      </button>
-    </div>
+    </>
   );
 };
 

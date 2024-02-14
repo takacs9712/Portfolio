@@ -1,37 +1,25 @@
 import React from "react";
+import { GitHubButton } from "./buttons/SocialButtons";
 
-const ProjectItem = ({ img, title }) => {
-  const handleMoreInfoClick = (event) => {
-    event.preventDefault();
-    alert(
-      "If you would like to review the source code, please get in touch with the administrator for access."
-    );
-  };
-
+const ProjectItem = ({ img, title, inProgress }) => {
   return (
-    <div className="relative flex items-center justify-center h-60 w-100% shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-gray-200 to-[#9fb3e7]">
+    <div className="relative flex items-center justify-center rounded-xl shadow-xl shadow-gray-400 bg-white group hover:bg-blue-500 hover:-translate-y-2 duration-200">
       <img
         src={img}
         alt="/"
-        className="rounded-xl group-hover:opacity-10 h-full w-full object-cover object-center"
+        className="rounded-xl group-hover:opacity-0 h-full w-full object-contain"
       />
-      <div className="hidden group-hover:block absolute top-[40%] left-[50%] translate-x-[-50%]">
-        <h3 className="text-2xl font-bold text-white tracking-wider text-center">
+      <div className="hidden group-hover:block absolute top-[20%] left-[50%] translate-x-[-50%]">
+        <h3 className="text-lg font-bold text-white tracking-wider text-center">
           {title}
         </h3>
-        <div className="flex justify-center gap-4">
-          <button
-            type="button"
-            className="w-40 bg-cyan-900 text-white font-bold cursor-pointer text-lg py-3 px-6 rounded-lg mt-4 ml-4"
-          >
-            More info
-          </button>
-          <button
-            className="w-40 bg-white text-gray-700 font-bold cursor-pointer text-lg py-3 px-6 rounded-lg mt-4"
-            onClick={handleMoreInfoClick}
-          >
-            Code
-          </button>
+        {inProgress && (
+          <p className="flex text-xs font-bold justify-center text-white  rounded-md px-2 py-1 mt-2">
+            ...In Progress
+          </p>
+        )}
+        <div className="flex justify-center gap-4 mt-10">
+          <GitHubButton />
         </div>
       </div>
     </div>

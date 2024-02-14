@@ -1,7 +1,6 @@
 import Sidenav from "../components/Sidenav";
 import Main from "../components/Main";
 import About from "../components/About";
-import WorkItem from "../components/WorkItem";
 import Projects from "../components/Projects";
 import Languages from "../components/Languages";
 import Contact from "../components/Contact";
@@ -13,7 +12,6 @@ const Home = () => {
       <Sidenav />
       <Main />
       <About />
-      <WorkItem />
       <Projects />
       <Languages />
       <Contact />
