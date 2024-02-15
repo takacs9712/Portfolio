@@ -34,21 +34,24 @@ const Main = () => {
             <h1 className="sm:text-5xl text-4xl font-bold text-white">
               I'm Viktor Takács
             </h1>
-            <h2 className="flex sm:text-3xl text-2xl pt-4 text-white">
-              I'm
-              <TypeAnimation
-                sequence={[
-                  "an ambitious Frontend Developer",
-                  1000,
-                  "also an Economist",
-                  1000,
-                ]}
-                wrapper="div"
-                cursor={true}
-                style={{ fontSize: "1em", paddingLeft: "5px" }}
-                repeat={Infinity}
-              />
-            </h2>
+            <div className="flex flex-col items-center justify-center sm:pt-4">
+              <h2 className="text-2xl sm:text-3xl text-white text-center">
+                I'm
+                <TypeAnimation
+                  sequence={[
+                    "an ambitious Frontend Developer",
+                    1000,
+                    "also an Economist",
+                    1000,
+                  ]}
+                  wrapper="div"
+                  cursor={true}
+                  style={{ fontSize: "1em", paddingLeft: "5px" }}
+                  repeat={Infinity}
+                />
+              </h2>
+            </div>
+
             <div className="flex justify-between pt-6 max-w-[200px] w-full ">
               <GitHubButton />
               <LinkedInButton />
