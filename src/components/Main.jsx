@@ -36,12 +36,11 @@ const Main = () => {
             </h1>
             <div className="flex flex-col items-center justify-center sm:pt-4">
               <h2 className="text-2xl sm:text-3xl text-white text-left">
-                I'm
                 <TypeAnimation
                   sequence={[
-                    "an ambitious Frontend Developer",
+                    "I am a Frontend Developer",
                     1000,
-                    "also an Economist",
+                    "I am also an Economist",
                     1000,
                   ]}
                   wrapper="div"
