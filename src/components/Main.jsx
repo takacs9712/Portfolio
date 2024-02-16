@@ -35,7 +35,7 @@ const Main = () => {
               I'm Viktor Takács
             </h1>
             <div className="flex flex-col items-center justify-center sm:pt-4">
-              <h2 className="text-2xl sm:text-3xl text-white text-center">
+              <h2 className="text-2xl sm:text-3xl text-white text-left">
                 I'm
                 <TypeAnimation
                   sequence={[
@@ -46,7 +46,7 @@ const Main = () => {
                   ]}
                   wrapper="div"
                   cursor={true}
-                  style={{ fontSize: "1em", paddingLeft: "5px" }}
+                  style={{ fontSize: "1em" }}
                   repeat={Infinity}
                 />
               </h2>
