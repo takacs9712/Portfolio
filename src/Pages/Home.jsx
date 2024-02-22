@@ -4,6 +4,7 @@ import About from "../components/About";
 import Projects from "../components/Projects";
 import Languages from "../components/Languages";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 import { SubjectProvider } from "../components/SubjectContext";
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
       <Projects />
       <Languages />
       <Contact />
+      <Footer />
     </SubjectProvider>
   );
 };

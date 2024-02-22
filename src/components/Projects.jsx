@@ -38,13 +38,13 @@ const Projects = () => {
             <ProjectItem
               img={PMSolutionsdemo}
               title="P&M Solutions Bt. Company Website"
-              inProgress={true}
+              inProgress={false}
             />
           </div>
           <button
             onClick={handleGetAccessClick}
             type="button"
-            className="bg-blue-700 hover:bg-blue-800 text-gray-100 mt-6 w-full p-4 rounded-lg font-bold uppercase"
+            className="bg-blue-500 hover:bg-blue-700 text-gray-100 mt-6 w-full p-4 rounded-lg font-bold uppercase"
           >
             Get Access
           </button>
