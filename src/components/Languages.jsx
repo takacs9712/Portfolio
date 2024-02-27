@@ -9,6 +9,8 @@ import bootstrap from "../assets/lg/bootstrap.webp";
 import material from "../assets/lg/material.webp";
 import astro from "../assets/lg/astro.webp";
 import vite from "../assets/lg/vite.webp";
+import node from "../assets/lg/node.webp";
+import express from "../assets/lg/express.webp";
 
 const Languages = () => {
   const frontendLanguages = [
@@ -52,6 +54,14 @@ const Languages = () => {
       name: "Material UI",
       image: material,
     },
+    {
+      name: "Node JS",
+      image: node,
+    },
+    {
+      name: "Express JS",
+      image: express,
+    },
   ];
 
   return (
@@ -61,7 +71,7 @@ const Languages = () => {
         className="container mx-auto py-20 sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg"
       >
         <h1 className="text-4xl font-bold mb-10 text-center text-[#001b5e] ">
-          Frontend Tools and Frameworks
+          Web Development Tools and Frameworks
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-4 gap-2 justify-items-center">
           {frontendLanguages.map((language, index) => (
