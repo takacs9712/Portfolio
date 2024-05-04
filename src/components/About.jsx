@@ -1,6 +1,6 @@
 import React from "react";
 import WorkItem from "./WorkItem";
-import data from "../data/Data.json";
+import { workExperienceData } from "../data/Data";
 
 const About = () => {
   return (
@@ -11,17 +11,8 @@ const About = () => {
       <h1 className="text-4xl font-bold text-center text-[#001b5e] mb-8">
         Work
       </h1>
-      {data.map((item, index) => (
-        <WorkItem
-          key={index}
-          index={index}
-          company={item.company}
-          year={item.year}
-          title={item.title}
-          duration={item.duration}
-          details={item.details}
-          link={item.link}
-        />
+      {workExperienceData.map((experienceItem) => (
+        <WorkItem key={experienceItem.index} {...experienceItem} />
       ))}
     </div>
   );

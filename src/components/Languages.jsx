@@ -68,7 +68,7 @@ const Languages = () => {
     <>
       <div
         id="languages"
-        className="container mx-auto py-20 sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg"
+        className="container mx-auto py-20 px-4 sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg"
       >
         <h1 className="text-4xl font-bold mb-10 text-center text-[#001b5e] ">
           Web Development Tools and Frameworks

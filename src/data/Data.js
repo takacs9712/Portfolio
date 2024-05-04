@@ -1,0 +1,58 @@
+export const workExperienceData = [
+  {
+    index: 0,
+    company: "P&M Solutions Bt.",
+    year: 2023,
+    title: "Frontend Developer",
+    duration: "Present",
+    details: [
+      "Spearheaded development of a diverse portfolio of websites and applications using React, JavaScript, TypeScript, Node.js, and Express.js.",
+      "Utilized version control systems such as Git to track changes throughout the development process.",
+      "Conducted cross-browser testing to ensure consistent display across different devices and browsers.",
+      "Participated in design meetings, contributing ideas for improving user interface elements and overall website layout.",
+    ],
+    link: "https://pnmsolutions.eu/",
+  },
+  {
+    index: 1,
+    company: "Webwise Hungary Kft.",
+    year: 2022,
+    title: "Customer Success Manager",
+    duration: "1 Year 6 months",
+    details: [
+      "At Syncee - Global Dropshipping,empowered B2B clients through strategic partnerships, driving retention and success via onboarding, application support, and cross-functional collaboration",
+      "Used industry expertise, customer service skills and analytical nature to resolve customer concerns and promote loyalty.",
+      "Assisted customers with onboarding and product setup to foster successful adoption and usage.",
+      "Analyzed customer feedback to identify areas for improvement, leading to enhanced product offerings.",
+    ],
+    link: "https://webwise.hu/",
+  },
+  {
+    index: 2,
+    company: "Gazdafi Electronic Kft.",
+    year: 2021,
+    title: "Marketing Assistant",
+    duration: "4 months",
+    details: [
+      "Leveraged market research and data analysis to craft impactful marketing strategies",
+      "Supported sales and customer success.",
+      "Cold called over a hundred potential customers per day and increase sales by 15%.",
+    ],
+    link: "https://www.villamossag.com/",
+  },
+  {
+    index: 3,
+    company: "Magyar Telekom Nyrt.",
+    year: 2020,
+    title: "Help Desk",
+    duration: "1 Year",
+    details: [
+      "At Telekom's Help Desk, I excelled in resolving complex technical issues for customers, earning recognition and transitioning into a new role training new employees",
+      "Diagnosed and troubleshot hardware, software and network issues.",
+      "Used ticketing systems to manage and process support actions and requests.",
+      "Configured and tested new software and hardware.",
+      "Installed, configured and maintained computer systems and network connections.",
+    ],
+    link: "https://www.telekom.hu/",
+  },
+];

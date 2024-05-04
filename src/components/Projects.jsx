@@ -22,14 +22,14 @@ const Projects = () => {
 
   return (
     <>
-      <div className="bg-[#f6f8fc] py-16">
+      <div className="bg-[#f6f8fc] py-16 px-4">
         <div id="projects" className="max-w-[1080px] m-auto py-16 mb-6">
           <div className="flex justify-center ">
             <h1 className="text-4xl font-bold text-center text-[#001b5e] ">
               My Recent Projects
             </h1>
           </div>
-          <div className="grid sm:grid-cols-3 gap-6 mt-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6 mt-10">
             <ProjectItem img={Syncee1} title="Syncee - App copy" />
             <ProjectItem img={animal} title="Animal Shelter" />
             <ProjectItem img={uploader} title="Image Upload/Download" />

@@ -15,7 +15,15 @@ const WorkItem = ({ year, company, title, duration, details, link }) => {
           </span>
         </p>
         <span className="my-2 text-lg font-bold text-[#001b5e]">{title}</span>
-        <p className="my-2 text-sm font-normal text-stone-500">{details}</p>
+        <ul className="list-disc pl-4 mt-2 text-sm font-normal text-stone-500">
+          {Array.isArray(details) ? (
+            details.map((detailItem, index) => (
+              <li key={index}>{detailItem}</li>
+            ))
+          ) : (
+            <li>{details}</li>
+          )}
+        </ul>
         <a
           href={link}
           target="_blank"
