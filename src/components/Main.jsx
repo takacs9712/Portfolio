@@ -2,8 +2,6 @@ import React from "react";
 import background from "../assets/background.webp";
 import { TypeAnimation } from "react-type-animation";
 import me from "../assets/viktor-image.webp";
-import DownloadButton from "./buttons/DownloadButton.jsx";
-import TakacsViktorCVeng from "../components/files/TakacsViktorCVeng.pdf";
 import {
   GitHubButton,
   LinkedInButton,
@@ -56,10 +54,6 @@ const Main = () => {
               <LinkedInButton />
               <EmailButton />
             </div>
-            <DownloadButton
-              fileName="TakacsViktorCVeng.pdf"
-              downloadUrl={TakacsViktorCVeng}
-            />
           </div>
         </div>
       </div>

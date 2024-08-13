@@ -1,10 +1,19 @@
 export const workExperienceData = [
   {
     index: 0,
+    company: "Tharanis ERP",
+    year: 2024,
+    title: "Software Developer",
+    duration: "Present",
+    details: [],
+    link: "https://tharanisugyvitel.hu/",
+  },
+  {
+    index: 1,
     company: "P&M Solutions Bt.",
     year: 2023,
     title: "Frontend Developer",
-    duration: "Present",
+    duration: "1 year",
     details: [
       "Spearheaded development of a diverse portfolio of websites and applications using React, JavaScript, TypeScript, Node.js, and Express.js.",
       "Utilized version control systems such as Git to track changes throughout the development process.",
@@ -14,7 +23,7 @@ export const workExperienceData = [
     link: "https://pnmsolutions.eu/",
   },
   {
-    index: 1,
+    index: 2,
     company: "Webwise Hungary Kft.",
     year: 2022,
     title: "Customer Success Manager",
@@ -28,7 +37,7 @@ export const workExperienceData = [
     link: "https://webwise.hu/",
   },
   {
-    index: 2,
+    index: 3,
     company: "Gazdafi Electronic Kft.",
     year: 2021,
     title: "Marketing Assistant",
@@ -41,7 +50,7 @@ export const workExperienceData = [
     link: "https://www.villamossag.com/",
   },
   {
-    index: 3,
+    index: 4,
     company: "Magyar Telekom Nyrt.",
     year: 2020,
     title: "Help Desk",
