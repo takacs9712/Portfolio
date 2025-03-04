@@ -24,13 +24,13 @@ const WorkItem = ({ year, company, title, duration, details, link }) => {
             <li>{details}</li>
           )}
         </ul>
-        <a
+        {/* <a
           href={link}
           target="_blank"
           className="text-blue-500 hover:text-blue-800"
         >
           Company Website
-        </a>
+        </a> */}
       </li>
     </ol>
   );

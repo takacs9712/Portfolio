@@ -13,7 +13,7 @@ import node from "../assets/lg/node.webp";
 import express from "../assets/lg/express.webp";
 
 const Languages = () => {
-  const frontendLanguages = [
+  const technologies = [
     {
       name: "HTML",
       image: html,
@@ -65,33 +65,32 @@ const Languages = () => {
   ];
 
   return (
-    <>
-      <div
-        id="languages"
-        className="container mx-auto py-20 px-4 sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg"
-      >
-        <h1 className="text-4xl font-bold mb-10 text-center text-[#001b5e] ">
-          Web Development Tools and Frameworks
+    <section id="languages" className="py-20 ">
+      <div className="max-w-[1240px] mx-auto px-6 text-center">
+        <h1 className="text-4xl font-bold text-[#001b5e] mb-12">
+          Web Development Tools & Frameworks
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-4 gap-2 justify-items-center">
-          {frontendLanguages.map((language, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {technologies.map((tech, index) => (
             <div
               key={index}
-              className="bg-white rounded shadow-md h-64 p-6 sm:p-10 flex flex-col justify-between"
+              className="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 p-6"
             >
-              <img
-                src={language.image}
-                alt={language.name}
-                className="w-full h-32 sm:h-32 md:h-40 object-cover mb-4"
-              />
-              <p className="text-lg font-semibold text-center">
-                {language.name}
-              </p>
+              <div className="flex flex-col items-center justify-center h-full">
+                <img
+                  src={tech.image}
+                  alt={tech.name}
+                  className="w-20 h-20 mb-6 object-contain"
+                />
+                <h3 className="text-xl font-semibold text-[#001b5e]">
+                  {tech.name}
+                </h3>
+              </div>
             </div>
           ))}
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

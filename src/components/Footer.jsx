@@ -4,43 +4,36 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white p-4">
-      <div className="container mx-auto text-center flex justify-center">
-        <p>© {new Date().getFullYear()} Takács Viktor. All rights reserved.</p>
+    <footer className="bg-gray-900 text-gray-300 p-8">
+      <div className="container mx-auto text-center">
+        <p className="text-lg font-semibold">
+          © {new Date().getFullYear()} Designed by Viktor Takács
+        </p>
       </div>
-      <div className="flex justify-center gap-10 mt-6">
+      <div className="flex justify-center gap-6 mt-6">
         <a
           href="https://github.com/takacs9712"
           target="_blank"
           rel="noopener noreferrer"
+          className="text-gray-300 transition transform hover:text-blue-400 hover:scale-125"
         >
-          <FaGithub
-            className="cursor-pointer hover:scale-110 ease-in duration-140"
-            size={20}
-            style={{ color: "white" }}
-          />
+          <FaGithub size={30} />
         </a>
         <a
           href="https://www.linkedin.com/in/takacs-viktor-650937230/"
           target="_blank"
           rel="noopener noreferrer"
+          className="text-gray-300 transition transform hover:text-blue-400 hover:scale-125"
         >
-          <FaLinkedinIn
-            className="cursor-pointer hover:scale-110 ease-in duration-140"
-            size={20}
-            style={{ color: "white" }}
-          />
+          <FaLinkedinIn size={30} />
         </a>
         <a
           href="mailto:takacsv90@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
+          className="text-gray-300 transition transform hover:text-blue-400 hover:scale-125"
         >
-          <MdEmail
-            className="cursor-pointer hover:scale-110 ease-in duration-140"
-            size={20}
-            style={{ color: "white" }}
-          />
+          <MdEmail size={30} />
         </a>
       </div>
     </footer>
